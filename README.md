@@ -33,7 +33,7 @@ This project was created to practice frontend development skills, including UI d
 
 https://collins-cloud.github.io/Simple-login-form/
 
-Example:
+
 
 ![Login Form Preview](Screenshot_20260221-094531.jpg)
 
