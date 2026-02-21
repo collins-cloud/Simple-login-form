@@ -31,7 +31,7 @@ This project was created to practice frontend development skills, including UI d
 
 # 📸 Preview
 
-(Add a screenshot here)
+https://collins-cloud.github.io/Simple-login-form/
 
 Example:
 
