@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>login form</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="InputDiv">
+<p class="LoginP">Login</p>
+
+<div class="entry">
+<input id="InputEmail" type="text" required>
+<label class="labelline">Email address</label>
+
+<p id="YouMust">you must type your email address </p>
+</div>
+
+
+<div class="entry">
+<input id="InputPassword" type="password" required>
+<label class="labelline">password</label>
+
+<p id="MustPassword">you must type your password</p>
+
+</div>
+
+<button onclick="LoginBtn()"> Login </button>
+
+
+<p class="DontHaveP">Don't have an account? <a href="#">sign up</a></p>
+
+</div>
+  
+  <script>
+
+const InputEmail = document.getElementById("InputEmail");
+
+const InputPassword = document.getElementById("InputPassword");
+
+const YouMust= document.getElementById("YouMust");
+
+const MustPassword= document.getElementById("MustPassword");
+
+
+function LoginBtn(){
+  if(InputEmail.value === ""){
+  YouMust.style.display="block";
+  }
+  else{
+    YouMust.style.display="none";
+  }
+  if(InputPassword.value === ""){
+  MustPassword.style.display="block";
+  }
+  else{
+    MustPassword.style.display="none";
+  }
+  
+  if(!InputEmail.value.endsWith("@gmail.com") ){
+    alert("please enter a valid email address");
+  }
+  
+}
+
+
+
+  </script>
+</body>
+
+</html>
